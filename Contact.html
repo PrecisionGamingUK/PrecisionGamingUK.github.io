@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-gb" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <!-- Load primary StyleSheet -->
+    <link rel="stylesheet" href="../StyleSheet/PrimaryStyleSheet.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Load JavaScript -->
+    <script src="../Scripting/PGSiteScript.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Mobile Nav Bar html - start - -->
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index.html" class="active">PrecisionGaming</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="About.html">About</a>
+                <a href="Code.html">Code</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="Games.html">Games</a>
+                <a href="Models.html">Models</a>
+                <a href="Stories.html">Stories</a>
+                <a href="News.html">News</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="MobileNavBarFuntion()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- Mobile Nav Bar html - start - -->
+    </header>
+
+    <main>
+        <div class="TextBackgroundCurved" style="text-align: center;">
+
+            <div class="container">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="unitedkingdom">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+            <br />
+            <br />
+            <a target="_blank" href="https://www.artstation.com/precisiongaming" style="padding: 1vw; text-decoration: none; ">
+                <img src="../Assets/Contact/ArtstationIcon.jpg" alt="ArtstationIcon" style="border-radius: clamp(2.5px, 2vw, 15px); width: clamp(50px, 3vw, 150px); height: auto;">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/gareth-sibson-03180a153/" style="padding: 1vw; text-decoration: none; ">
+                <img src="../Assets/Contact/LinkdnIcon.jpg" alt="LinkdnIcon" style="border-radius: 40px; width:clamp(50px, 3vw, 150px); height: auto;">
+            </a>
+            <a target="_blank" href="https://forums.unrealengine.com/u/PrecisionGaming" style="padding: 1vw; text-decoration: none;">
+                <img src="../Assets/Contact/UnrealIcon.jpg" alt="UnrealIcon" style="border-radius: 40px; width:clamp(50px, 3vw, 150px); height: auto;">
+            </a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCYh9PNKdyIeihTWKFZub-UQ/featured">
+                <img src="../Assets/Contact/YoutubeIcon.jpg" alt="YoutubeIcon" style="border-radius: 40px; width:clamp(50px, 3vw, 150px); height: auto;">
+            </a>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>

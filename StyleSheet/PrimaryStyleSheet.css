@@ -1,0 +1,405 @@
+﻿@font-face {
+    font-family: MainFont;
+    src: url('../Font/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: MainHeadingFont;
+    src: url('../Font/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: NavFont;
+    src: url('../Font/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: HoverNavFont;
+    src: url('../Font/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: ExcitingFont;
+    src: url('../Font/MochiyPopOne-Regular.ttf');
+}
+/*Page Background - Start - */
+body {
+    background-color: black;
+    margin: 0px;
+    background-image: url('../Assets/PG_Skull2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-Y: center;
+    background-size: cover;
+    background-size: auto 85%;
+    max-width: 100%;
+    height: auto;
+}
+/*Page Background - End - */
+
+main {
+    padding: clamp(8px, 3vw, 72px);
+}
+
+.TextBackgroundCurved {
+    border-radius: 25px;
+    background: rgba(34, 34, 34, 0.85);
+    padding: clamp(8px, 3vw, 72px);
+    vertical-align: middle;    
+}
+
+.TextAreaSpacing {
+    padding: clamp(8px, 1.5vw, 72px);   
+}
+
+h1 {
+    color: white;
+    font-size: clamp(18px, 1.5vw, 36px);
+    padding: clamp(4px, 2vw, 12px);
+    font-family: MainHeadingFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+    text-decoration: underline;
+}
+
+p {
+    color: white;
+    font-size: clamp(16px, 1.5vw, 32px);
+    padding: clamp(4px, 2vw, 12px);
+    font-family: MainFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+}
+/* paragraph text with background - start - */
+.textWithBackground {
+    color: white;
+    font-size: clamp(16px, 1.5vw, 32px);
+    padding: clamp(4px, 2vw, 12px);
+    font-family: MainFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(125 0 0);
+    border-radius: 10px;
+}
+/* paragraph text with background  - end - */
+/* paragraph text with background type 02 - start - */
+.textWithBackgroundType2 {
+    color: white;
+    font-size: clamp(16px, 1.5vw, 32px);
+    padding: clamp(4px, 2vw, 12px);
+    font-family: MainFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(30 0 0);
+    border-radius: 10px;
+    text-decoration: underline;
+}
+/* paragraph text with background type 02  - end - */
+
+/* Bullet Points - start - */
+ul.a {
+    list-style-type: circle; 
+}
+/* Bullet Points - end - */
+/* List text formatting - start - */
+li {
+    color: white;
+    font-size: clamp(16px, 1.5vw, 32px);
+    padding: clamp(8px, 2.5vw, 24px);
+    font-family: MainFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+    margin-left: 4vw;
+}
+/* List text formatting - end - */
+
+/* web links - start - */
+a {
+    color: white;
+    font-size: clamp(18px, 1.5vw, 36px);
+    padding: clamp(4px, 2vw, 12px);
+    font-family: MainHeadingFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+    text-decoration: underline;
+    text-align:center;    
+}
+/* web links - end - */
+/* web links type 2 - start - */
+a1 {
+    color: white;
+    font-size: clamp(18px, 1.5vw, 36px);
+    padding: clamp(4px, 2vw, 12px);
+    font-family: MainHeadingFont, Arial, Times New Roman, Serif;
+    vertical-align: middle;
+    text-align: center;
+}
+/* web links type 2  - end - */
+
+
+.ImportantText {
+    padding: clamp(16px, 1.5vw, 32px);
+    font-family: ExcitingFont, Arial, Times New Roman, Serif;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-shadow: 3px 3px 7px rgb(225 0 0);
+    font-size: clamp(20px, 2.5vw, 45px);
+}
+
+/* Container for embedded videos - Start - */
+.EmbeddedVideoDiv {
+    padding: clamp(4px, 1.5vw, 72px);
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    background-color: black;
+    margin: 0px;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-Y: center;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+/* Container for embedded videos - end - */
+
+/* Container for images - Start - */
+.imagecontainerdiv {
+    padding: clamp(16px, 2vw, 72px);
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    background-color: black;
+    margin: 0px;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-Y: center;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+/* Container for images - end - */
+
+/* Mobile Nav Bar Style - Start - */
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: rgba(40 40 40 / 0.75);
+    border-radius: 25px;
+    position: relative;
+    /* Default Font */
+    font-family: NavFont, Arial, Times New Roman, Serif;
+    font-size: clamp(20px, 2vw, 40px);
+    color: rgb(255 255 255);
+    
+}
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+        
+    }
+    /* Style navigation menu links */
+    .topnav a {
+        padding: clamp(6px, 2vw, 12px);
+        text-decoration: none;
+        display: block;
+        /* Default Font Drop Down Font */
+        font-family: NavFont, Arial, Times New Roman, Serif;
+        font-size: clamp(20px, 2vw, 40px);
+        color: rgb(255 255 255);
+        text-align: left;
+    }
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            background: rgb(50 50 50);
+            border-radius: 25px;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        /* Add a color on mouse-over */
+        .topnav a:hover {
+            background-color: rgba(188 188 188 / 0.75);
+            border-radius: 25px;
+            /* Hover Font */
+            font-family: HoverNavFont, Arial, Times New Roman, Serif;
+            color: rgb(0, 0, 0);
+        }
+/* Style the active link (or home/logo) */
+.active {
+    background-color: rgb(30 30 30);
+    border-radius: 25px;
+    color: white;
+}
+/* Mobile Nav Bar Style - End - */
+
+
+
+/* portfolio image grid - start - */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.portfolioContainer {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.portfolioGallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: clamp(1px, 0.5vw, 10px);
+}
+
+.portfolioGalleryImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+/* portfolio image grid - end - */
+
+
+
+/* simple image grid - start - */
+.simpleimagecontainer {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.simpleimagegallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 5vw);
+    grid-gap: clamp(1px, 0.5vw, 10px);   
+}
+
+.simpleimagegallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.simpleimagegallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.simpleimagegallery__item--2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.simpleimagegallery__item--3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+/* simple image grid - end - */
+
+/* embedded video responsive wrapper - start - */
+.videoResponsive {
+    padding-bottom: 56.25%;
+    height: 0;
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+    .videoResponsive iframe,
+    .videoResponsive object,
+    .videoResponsive embed {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+/* embedded video responsive wrapper  - end - */
+
+/* Contact Form - start - */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(60 0 0);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: rgb(225 0 0);
+    }
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(69 69 69 / 0.8);
+    font-family: HoverNavFont, Arial, Times New Roman, Serif;
+    color: rgb(255 255 255);
+}
+/* Contact Form - end - */
